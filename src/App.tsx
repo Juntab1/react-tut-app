@@ -1,6 +1,8 @@
 // import ListGroup from "./components/ListGroup";
 // the "." tells us the current folder
+import { useState } from "react";
 
+import Alert from "./components/Alert";
 import Buttons from "./components/Buttons";
 
 // import Alert from "./components/Alert";
@@ -11,6 +13,7 @@ function App() {
   // const handleSelectItem = (item: string) => {
   //   console.log(item);
   // };
+  const [alertShown, updateAlertStatus] = useState(false);
 
   return (
     <div>
@@ -22,7 +25,8 @@ function App() {
       {/* <Alert>
         Hello <span>World</span>
       </Alert>  */}
-      <Buttons onClick={() => console.log('Clicked')}>My Button</Buttons>
+      {alertShown && <Alert onClose={() => updateAlertStatus(false)}/>}
+      <Buttons onClick={() => updateAlertStatus(true)}>My Button</Buttons>
     </div>
   );
 }
