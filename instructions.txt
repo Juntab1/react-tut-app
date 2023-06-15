@@ -1,0 +1,15 @@
+1. Started with creating the message.tsx, it explains what a tsx is and how
+    html looking code is actually translated into javascript
+
+What is the difference between a library (what react is) and a framwork?
+Library: tool that provides speccific functionality
+Framework: a set of tools and guidelines for building apps
+
+bootstrap is a css library that gives us modern look
+
+2. make sure to create a componenets folder in src
+
+command d lets you do multi cursor editing!
+
+if you go to view and command palet the configure you can use prettier to make your tsx file
+look better!
